@@ -1,3 +1,4 @@
+"""
 # 41. Faça um programa que leia o valor da hora de trabalho (em reais) e o numero de horas trabalhadas no mes.
 # Imprima o valor a ser pago ao funcionario, adicionando 10% sobre o valor calculado.
 valorHora = float(input('41. Qual o valor da hora trabalhada? '))
@@ -37,8 +38,25 @@ degrau = float(input('44. Qual a altura do degrau?(em metros) '))
 altura = float(input('Qual a altura que deseja alcançar?(em metros) '))
 qtdDegraus = int(altura / degrau)
 
+
 # 46. Faça um programa que leia um numero inteiro positivo de 3digitos(100 - 999). Gere outro numero formado pelos
 # digitos invertidos do numero lido.
-num = input("Digite um valor de 3 digitos: ")
-novoNum = num[::]
-print(novoNum)
+num = int(input("Digite um valor de 3 digitos: "))
+if num < 0 or num >= 1000:
+    print('Valor invalido')
+else:
+    novoNum = str(num)
+    print(novoNum[::-1])
+
+# 47. Leia um numero inteiro de 4digitos(1000-9999) e imprima um algarismo por linha.
+num4 = int(input('Digite um valor com 4 digitos: '))
+
+if 1000 < num4 < 10000:
+    strNum4 = str(num4)
+
+    for n in strNum4:
+        print(n)
+else:
+    print('Valor invalido')
+"""
+
