@@ -1,5 +1,4 @@
-# Python.Execs_Geek_University
-# ExerciciosGU
+# GeekUniversity - Python Exercicios
 
 Resolução dos exercicios propostos no curso da Geek University.
 
