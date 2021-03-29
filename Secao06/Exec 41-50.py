@@ -48,8 +48,6 @@ while id > 0:
 
 print(idades)-
 print(sum(idades) / len(idades))
-"""
-
 
 # 44. Leia um numero positivo do usuario, então, calcule e imprima a sequencia de Fibonacci até o primeiro numero
 # superior ao numero lido.
@@ -75,3 +73,38 @@ while not fibo(i) > num:
     i += 1
 
 print(lFibo)
+"""
+
+# 45.Faça um prog para convercões de velocidades, faça um menu com opções das converções e um opção de saída
+
+
+def kmh2ms(v):
+    vel = v / 3.6
+    return f'{v}Km/h = {vel}m/s'
+
+
+def ms2kmh(v):
+    vel = v * 3.6
+    return f'{v}m/s = {vel}Km/h'
+
+
+choice = 0
+while not choice == 3:
+    choice = int(input(
+        """
+        1. Km/h para m/s
+        2. ms para  Km/h
+        3. Finalizar
+        
+        O que faremos: """))
+
+    op = [kmh2ms, ms2kmh]
+
+    if choice in range(1, 3):
+        velocidade = float(input("Qual a velocidade a converter? "))
+        print(op[choice-1](velocidade))
+
+    else:
+        print('Por favor selecione uma opção válida')
+
+print('Até mais ')
