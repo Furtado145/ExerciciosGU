@@ -1,3 +1,4 @@
+"""
 # 41. Calcule a associação em paralelo de 2 resistores R1 e R2, ambos fornecidos pelo usuario. Faça repetidas vezes,
 # com a condição de saida sendo quando o usuario enviar o valor 0(zero)
 
@@ -25,9 +26,30 @@ while True:
 from math import sqrt
 
 valor = 1
-while valor >= 1:
+while valor > 0:
+
     valor = int(input('Digite o valor: '))
-    print(f'{valor}^2: {valor ** 2}; {valor}^3: {valor ** 3}; Raiz Quadrada: {sqrt(valor)} ')
+
+    if valor > 0:
+        print(f'{valor}^2: {valor ** 2}; {valor}^3: {valor ** 3}; Raiz Quadrada: {sqrt(valor)} ')
+
 
 # 43.
 idades = []
+
+id = 1
+while id > 0:
+
+    id = int(input('Digite a sua idade: '))
+
+    if id > 0:
+        idades.append(id)
+
+
+print(idades)-
+print(sum(idades) / len(idades))
+"""
+
+
+# 44. Leia um numero positivo do usuario, então, calcule e imprima a sequencia de Fibonacci até o primeiro numero
+# superior ao numero lido.
