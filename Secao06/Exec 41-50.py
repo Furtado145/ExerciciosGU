@@ -53,3 +53,25 @@ print(sum(idades) / len(idades))
 
 # 44. Leia um numero positivo do usuario, então, calcule e imprima a sequencia de Fibonacci até o primeiro numero
 # superior ao numero lido.
+from math import sqrt
+
+
+def fibo(x):
+    if x <= 1:
+        return x
+    else:
+        fx = fibo(x-1) + fibo(x-2)
+        return fx
+
+
+num = int(input('Digite o valor: '))
+lFibo = ""
+i = 0
+
+while not fibo(i) > num:
+
+    lFibo += f"{fibo(i)} "
+
+    i += 1
+
+print(lFibo)
